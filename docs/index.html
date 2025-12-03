@@ -12,6 +12,50 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
     <link rel="stylesheet" href="main.css" />
+    <style>
+        .statement {
+            border: 1px solid black;
+            background-color: whitesmoke;
+            padding: 20px;
+            margin: 10px 0;
+        }
+
+        .statement h3 {
+            color: black;
+        }
+
+        .containerrow {
+            display: flex;
+            justify-content: space-between;  /* distributes boxes evenly */
+            align-items: flex-start;
+            width: 100%;
+            gap: 20px;                       /* optional spacing */
+            align-items: stretch;
+        }
+
+        .characteristics {
+            flex: 1;                         /* allow flexible equal width */
+            min-width: 22%;                  /* ensures 4 per row */
+            background-color: rgb(121, 121, 121);
+            border: 0px solid black;
+            display: flex;
+            flex-direction: column;          /* title on top */
+            align-items: center;             /* center horizontally */
+            text-align: center;
+            padding: 20px;
+            margin: 10px 0;
+        }
+
+        .characteristics h3 {
+            margin-bottom: 12px;
+            font-weight: bold;
+            color: whitesmoke;
+        }
+
+        .characteristics p {
+            color: gold
+        }
+    </style>
 </head>
 <body class = "homepage is-preload">
     <div id = "pagewrapper">
@@ -48,13 +92,56 @@
         <!--Main-->
         <section id = "main">
             <div class = "container">
+                <div class = "statement">
+                    <h3><strong>Customer/End user</strong></h3>
+                    <p>Spoiler Alert is designed for anyone who buys, cooks, or consumes food—especially those who want to stay proactive about food safety. Our primary end users are everyday consumers, including families, caregivers, and individuals with dietary restrictions, allergies, or health conditions that make them more vulnerable to foodborne illnesses. These users rely on Spoiler Alert to receive timely, accurate notifications that help them make safe decisions about what they eat. Our customers also include businesses and organizations that benefit from improved recall communication, such as grocery stores, restaurants, and food service providers. By staying informed about recalls, these establishments can take quick action to remove affected products, maintain consumer trust, and prevent potential health risks. Together, Spoiler Alert empowers both consumers and businesses to create a safer food environment for everyone.</p>
+                </div>
+
+                <div class = "statement">
                 <h3><strong>Problem Description</strong></h3>
                     <p>Food recalls occur frequently, yet there is no efficient or accessible system that ensures consumers are promptly informed. Many people remain unaware of recalls that could directly affect the safety of the food they consume. Official recall resources often rely on outdated email alerts, which are easily overlooked in today’s mobile-driven world. Existing applications also fail to engage users—they lack personalization, accessibility, and real-time updates. This gap leaves families, caregivers, and vulnerable individuals at risk of consuming unsafe products without ever realizing it.</p>
-                <h3><strong>Customer/End user</strong></h3>
-                    <p>Spoiler Alert is designed for anyone who buys, cooks, or consumes food—especially those who want to stay proactive about food safety. Our primary end users are everyday consumers, including families, caregivers, and individuals with dietary restrictions, allergies, or health conditions that make them more vulnerable to foodborne illnesses. These users rely on Spoiler Alert to receive timely, accurate notifications that help them make safe decisions about what they eat. Our customers also include businesses and organizations that benefit from improved recall communication, such as grocery stores, restaurants, and food service providers. By staying informed about recalls, these establishments can take quick action to remove affected products, maintain consumer trust, and prevent potential health risks. Together, Spoiler Alert empowers both consumers and businesses to create a safer food environment for everyone.</p>
-                <h3><strong>Solution Statement</strong></h3>
+                </div>
+                    <div class = "containerrow">
+                        <div class = "characteristics">
+                            <h3>Awareness:</h3>
+                            <p>Food recalls announced by the FDA/USDA spread slowly and unevenly. Consumers aren’t aware of unsafe conditions that may cause harm</p>
+                        </div>
+                        <div class = "characteristics">
+                            <h3>Engagement:</h3>
+                            <p>Many consumers don’t view recalls as something that requires urgent attention. This causes consumers to be uninformed for prolonged periods of time, causing risk.</p>
+                        </div>
+                        <div class = "characteristics">
+                            <h3>Customization:</h3>
+                            <p>Other apps do not allow you to customize what medium you are notified by, rather only having one method of notification. User experience suffers at the cost of mediocre interfaces.</p>
+                        </div>
+                        <div class = "characteristics">
+                            <h3>Urgency:</h3>
+                            <p>There are no direct, reliable channels to consistently reach users with information regarding recalls. Misinforms people with allergies to be put at risk.</p>
+                        </div>
+                    </div>
+                    
+                <div class = "statement">
+                    <h3><strong>Solution Statement</strong></h3>
                     <p>Spoiler Alert is an innovative web and mobile application designed to deliver personalized, immediate, and trustworthy food recall alerts. By combining speed, clarity, and reliability, Spoiler Alert ensures that users receive instant notifications through text, push, or email whenever a recall occurs. The platform uses simple, consumer-friendly language to communicate critical safety information and allows users to personalize their experience through allergy filters, barcode or receipt scanning, and custom notification settings. All alerts are sourced directly from verified FDA and USDA data, providing users with confidence in the accuracy and reliability of the information. Ultimately, Spoiler Alert helps families, caregivers, and vulnerable individuals stay informed and safe—ensuring that there are no surprises at the table.</p>
-
+                </div>
+                    <div class = "containerrow">
+                        <div class = "characteristics">
+                            <h3>Centralized Recall Awareness:</h3>
+                            <p>A single platform where recall information is collected and delivered consistently so consumers don't miss important updates on recalled products.  Information is conveyed in a clear and concise manner to make recall information easy for consumers to understand.</p>
+                        </div>
+                        <div class = "characteristics">
+                            <h3>Consumer Motivation:</h3>
+                            <p>Notifications highlight the immediate importance of recalls.  Users will be able to get relevant recall information based on their individual preferences, keeping them motivated to stay informed.</p>
+                        </div>
+                        <div class = "characteristics">
+                            <h3>Personalized Notifications:</h3>
+                            <p>Users are given flexible options on how they wish to be notified of recalls.  The consumer has the customizability to make their choice of app notifications, text messages, or emails to fit best into their daily life.</p>
+                        </div>
+                        <div class = "characteristics">
+                            <h3>Immediate and Reliable Alerts:</h3>
+                            <p>The use of dependable and customizable delivery of notifications ensures recall information reach users without delay.  Users that have specific allergies or conditions can have alerts marked as critical.</p>
+                        </div>
+                    </div>
             </div>
         </section>
 
