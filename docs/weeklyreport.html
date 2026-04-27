@@ -8,15 +8,20 @@
 
 <html>
 <head> 
-    <title>Glossary • Spoiler Alert</title>
+    <title>Weekly Reports • Spoiler Alert</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
     <link rel="stylesheet" href="main.css" />
     <style>
-        h2 {
+    .deliverable-section {
         margin-bottom: 60px;
         text-align: center;
         display: block
+    }
+
+    .pdf-frame {
+    max-width: 100%;
+    margin: 0 20px;
     }
     </style>
 </head>
@@ -47,61 +52,35 @@
 
         <!--Main-->
         <section id = "main">
-            <div class = "container">
-                <!--Intro-->
-                <section class = "box special">
-                    <header class = "major">
-                        <h2>Glossary</h2>
-                    </header>
-                </section>
-                <!--Add main page content here-->
-                <table>
-                    <tr>
-                        <th>Word/Abbreviation</th>
-                        <th>Definition</th>
-                    </tr>
-                    <tr>
-                        <td>JSON</td>
-                        <td>JavaScript Object Notation</td>
-                    </tr>
-                    <tr>
-                        <td>Product Recall</td>
-                        <td>When a manufacturer notifies the market of a product with a defect or potential danger.</td>
-                    </tr>
-                    <tr>
-                        <td>FDA</td> <!--First Column/Word-->
-                        <td>Food and Drug Administration</td> <!--Second Column/Definition-->
-                    </tr>
-                    <tr>
-                        <td>CDC</td>
-                        <td>Centers for Disease Control and Prevention</td>
-                    </tr>
-                    <tr>
-                        <td>UPC</td>
-                        <td>Universal Product Code</td>
-                    </tr>
-                    <tr>
-                        <td>USDA</td>
-                        <td>U.S. Department of Agriculture</td>
-                    </tr>
-                    <tr>
-                        <td>CPSC</td>
-                        <td>U.S. Consumer Product Saftey Comission</td>
-                    </tr>
-                    <tr>
-                        <td>FSIS</td>
-                        <td>Food Safety and Inspection Service</td>
-                    </tr>
-                    <tr>
-                        <td>openFDA API</td>
-                        <td>The way SpoilerAlert is accessing FDA data.</td>
-                    </tr>
-                    <tr>
-                        <td>Barcode Lookup API</td>
-                        <td>The way SpoilerAlert is accessing FDA data.</td> <!--needs to be edited!-->
-                    </tr>
-                </table>
-            </div>
+
+                <div class="deliverable-section">
+                    <h2 style="text-align: center;">Weekly Reports</h2>
+
+                    <div class="row aln-center" style="width: 100%;">
+
+                        <!-- Left Intro -->
+                        <div class="6u 12u$(medium)" style="text-align: center;">
+                            <h3>Jan 29th to Feb 4th</h3>
+                            <iframe src="pdfs/Jan29th.pdf" width="450" height="700" class="pdf-frame" frameborder="0"></iframe>
+                        </div>
+
+                        <!-- Right Intro -->
+                        <div class="6u 12u$(medium)" style="text-align: center;">
+                            <h3>Feb 5th to Feb 11th</h3>
+                            <iframe src="pdfs/Feb4th.pdf" width="450" height="700" class="pdf-frame" frameborder="0"></iframe>
+                        </div>
+
+                        <!-- Left Intro -->
+                        <div class="6u 12u$(medium)" style="text-align: center;">
+                            <h3>Feb 12th to Feb 18th</h3>
+                            <iframe src="pdfs/Feb17th.pdf" width="450" height="700" class="pdf-frame" frameborder="0"></iframe>
+                        </div>
+
+                        <!-- Right Intro -->
+                        <div class="6u 12u$(medium)" style="text-align: center;">
+                            <h3>Feb 22nd to Feb 28th</h3>
+                            <iframe src="pdfs/Feb22nd.pdf" width="450" height="700" class="pdf-frame" frameborder="0"></iframe>
+                        </div>
         </section>
 
         <!-- Footer -->
