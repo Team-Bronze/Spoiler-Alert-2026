@@ -8,17 +8,64 @@
 
 <html>
 <head> 
-    <title>Glossary • Spoiler Alert</title>
+    <title>Poster • Spoiler Alert</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
     <link rel="stylesheet" href="main.css" />
-    <style>
-        h2 {
-        margin-bottom: 60px;
-        text-align: center;
-        display: block
-    }
-    </style>
+<style>
+  .deliverable-section {
+    margin-bottom: 60px;
+    text-align: center;
+    display: block
+  }
+
+  .img-row {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin: 30px 0;
+    flex-wrap: wrap;
+  }
+
+  .img-large {
+    text-align: center;
+  }
+
+  .img-large img {
+    width: 100%;
+    border-radius: 6px;
+  }
+
+  .img-item {
+    text-align: center;
+    max-width: 650px;
+  }
+
+  .img-item img {
+    width: 100%;
+    border-radius: 6px;
+  }
+
+  .row-3 .img-item {
+    max-width: 300px;
+  }
+
+  h2 {
+    margin-top: 50px;
+  }
+
+  .zoomable {
+    transition: transform 0.3s ease;
+    cursor: pointer;
+  }
+
+  .zoomable:hover {
+    transform: scale(1.25);
+    z-index: 1000;
+  }
+
+</style>
+
 </head>
 <body class = "homepage is-preload">
     <div id = "pagewrapper">
@@ -47,60 +94,17 @@
         <!--Main-->
         <section id = "main">
             <div class = "container">
-                <!--Intro-->
-                <section class = "box special">
-                    <header class = "major">
-                        <h2>Glossary</h2>
-                    </header>
-                </section>
-                <!--Add main page content here-->
-                <table>
-                    <tr>
-                        <th>Word/Abbreviation</th>
-                        <th>Definition</th>
-                    </tr>
-                    <tr>
-                        <td>JSON</td>
-                        <td>JavaScript Object Notation</td>
-                    </tr>
-                    <tr>
-                        <td>Product Recall</td>
-                        <td>When a manufacturer notifies the market of a product with a defect or potential danger.</td>
-                    </tr>
-                    <tr>
-                        <td>FDA</td> <!--First Column/Word-->
-                        <td>Food and Drug Administration</td> <!--Second Column/Definition-->
-                    </tr>
-                    <tr>
-                        <td>CDC</td>
-                        <td>Centers for Disease Control and Prevention</td>
-                    </tr>
-                    <tr>
-                        <td>UPC</td>
-                        <td>Universal Product Code</td>
-                    </tr>
-                    <tr>
-                        <td>USDA</td>
-                        <td>U.S. Department of Agriculture</td>
-                    </tr>
-                    <tr>
-                        <td>CPSC</td>
-                        <td>U.S. Consumer Product Saftey Comission</td>
-                    </tr>
-                    <tr>
-                        <td>FSIS</td>
-                        <td>Food Safety and Inspection Service</td>
-                    </tr>
-                    <tr>
-                        <td>openFDA API</td>
-                        <td>The way SpoilerAlert is accessing FDA data.</td>
-                    </tr>
-                    <tr>
-                        <td>Barcode Lookup API</td>
-                        <td>The way SpoilerAlert is accessing FDA data.</td> <!--needs to be edited!-->
-                    </tr>
-                </table>
-            </div>
+
+                <!--Poster-->
+                <div class="deliverable-section">
+                    <h2>Poster</h2>
+                    <div class="img-row">
+                        <div class="img-large">
+                            <img src="images/Spoiler-Alert-Poster.png" alt="Centered Homepage">
+                        </div>
+                    </div>
+                </div>
+
         </section>
 
         <!-- Footer -->
